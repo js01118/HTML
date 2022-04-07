@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./action.php" method="get">
+        <fieldset>
+            <legend>납품자 정보</legend>
+            <p></p>
+            <form>
+                <ol>
+                <li> 납품자명 :  <input type="text" name="납품자명"> </li> 
+                <p></p>
+                <li> email : <input placeholder="answer@naver.com"> </li> 
+                <p></p>
+                <li> 홈페이지 :  <input type="url" name="홈페이지"  value="http://"> </li> 
+                <p></p>
+                <li> 지역 :  <select name="select" id="select" > </li> 
+                    <option value="default" >부산</option>  
+                    <option value="1" >서울</option>  
+                    <option value="2" >대전</option>  
+                    <option value="3" >대구</option>  
+                </select>
+                <p></p>
+            </ol>
+            </form>
+        </fieldset>
+    </form>
+    <form action="./action.php" method="get">
+        <fieldset>
+            <legend>납품 정보</legend>
+            <p></p>
+            <form>
+                <ul>
+                 <li> 상품명 : <input type="text" name="상품명"> </li>
+                <p></p>
+                <li> 납품수량 : <input placeholder="최소 100"> </li>
+                <p></p> 
+                <li> <form action="./action2.php" method="get">
+                    <label>기타사항 :</label>
+                    <textarea name="opinion" cols="30" rows="5"></textarea><br>
+                    <p></p>
+                </form> </li>
+                <p></p>
+                </ul>
+            </form>
+        </fieldset>
+    </form>
+    <p></p>
+    <button onclick="gotopizza()">send message</button> 
+</body>
+
+<script>
+    function gotopizza() {
+        location.href = "test010.html";
+    }
+</script>
+</html>
